@@ -16,6 +16,8 @@ const (
 	ButtonPin          uint = 25
 )
 
+var MyButtonPin uint
+
 type Talkiepi struct {
 	Config *gumble.Config
 	Client *gumble.Client
@@ -37,4 +39,6 @@ type Talkiepi struct {
 	TransmitLED     gpio.Pin
 	Button          gpio.Pin
 	ButtonState     uint
+
+	PinNo uint
 }
